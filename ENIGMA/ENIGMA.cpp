@@ -69,7 +69,7 @@ public:
             {
                 b_wires[i] += number_of_letters_of_this_rotor;
             }
-            //cout << i+1 << "+" << wires[i] << " " << i+1<<endl;
+            cout << i+1 << "+" << wires[i] << " " << i+1<<endl;
         }
     }
     /*
@@ -103,8 +103,8 @@ public:
     }
     int signal(int letter) const //wysyłanie sygnału BEZ OBROTU
     {
-        int Al = letter - 1; //gupie amerykanskie numerowanie mozna zamiast tego dodac jeden do dzielenia
-        //cout << "SYGNAL " << Al + wires[Al + position] << " % " << number_of_letters_of_this_rotor << " +1"<<endl;
+        int Al = letter - 1;
+        cout << "SYGNAL " << Al + wires[Al + position] << " % " << number_of_letters_of_this_rotor << " +1"<<endl;
         return ((Al + wires[(Al + position) % number_of_letters_of_this_rotor]) % number_of_letters_of_this_rotor) + 1; //cos zle
 
        // return ()
@@ -191,21 +191,21 @@ int main()
     ////rotory
     int number_of_letters; //liczba liter w alfabecie
     int number_of_rottors; //liczba wirników w szafie
-    //cout << "liczba liter"<<endl;//...
+    cout << "liczba liter"<<endl;//...
     cin >> number_of_letters;
-    // cout << "Ile istnieje rotorow" << endl; //...
+    cout << "Ile istnieje rotorow" << endl; //...
     cin >> number_of_rottors;
     rotor* rottors_array = new rotor[number_of_rottors]; //tablica wirników
 
     for (int i = 0; i < number_of_rottors; i++)
     {
-        // cout << "PERMUTACJA" << endl;
+        cout << "PERMUTACJA" << endl;
         int* x = new int[number_of_letters];
         for (int j = 0; j < number_of_letters; j++)
         {
             cin >> x[j];
         }
-        // cout << "NOTCHE" << endl;
+        cout << "NOTCHE" << endl;
         int number_of_notches;
         cin >> number_of_notches;
         int* y = new int[number_of_notches];
@@ -225,13 +225,13 @@ int main()
     }
 
     ///reflektory
-    // cout << "ILE ISTNIEJE REFLEKTOROW" << endl;
+    cout << "ILE ISTNIEJE REFLEKTOROW" << endl;
     int number_of_reflectors; //liczba dostepnych do wyboru reflektorow
     cin >> number_of_reflectors;
     reflector* reflector_array = new reflector[number_of_reflectors]; //tablica reflektorów
     for (int i = 0; i < number_of_reflectors; i++)
     {
-        //cout << "PERMUTACJA REFLEKTORA" << endl;
+        cout << "PERMUTACJA REFLEKTORA" << endl;
         int* z = new int[number_of_letters];
         for (int j = 0; j < number_of_letters; j++)
         {
@@ -247,14 +247,14 @@ int main()
         delete[] z;
     }
 
-    // cout << "ZADANIA" << endl;
+    cout << "ZADANIA" << endl;
     int p;
     cin >> p;
 
     for (int i = 0; i < p; i++)
     {
         //liczba rotorów w tym zadaniu
-        //  cout << "liczba rotorow na osi" << endl;
+        cout << "liczba rotorow na osi" << endl;
         int n_rottors_in_task;
         cin >> n_rottors_in_task;
         rotor* axis = new rotor[n_rottors_in_task]; //oś rotorów
@@ -262,19 +262,19 @@ int main()
 
         for (int j = 0; j < n_rottors_in_task; j++)
         {
-            //  cout << "wybierz index rotora na os" << endl;
+            cout << "wybierz index rotora na os" << endl;
             int tmp_index;
             cin >> tmp_index;
             axis[j] = rottors_array[tmp_index];
             //axis[j].copy(rottors_array[tmp_index]);
 
-            // cout << "WYBIERZ POZYCJE ROTORA (w ktorej jest (nie na osi))"<<endl;
+            cout << "WYBIERZ POZYCJE ROTORA (w ktorej jest (nie na osi))"<<endl;
             int position;
             cin >> position;
             axis[j].set_position(position);
 
         }
-        //cout << "WYBIERZ INDEX REFLECTORA" << endl;
+        cout << "WYBIERZ INDEX REFLECTORA" << endl;
         reflector TheReflector;
         int reflector_index;
         cin >> reflector_index;
