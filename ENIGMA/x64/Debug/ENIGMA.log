@@ -1,0 +1,17 @@
+﻿  ENIGMA.cpp
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(324,1): error C2059: błąd składniowy: „for”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(324,15): error C2143: błąd składniowy: brakuje „)” przed „;”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(324,19): error C2143: błąd składniowy: brakuje „;” przed „!=”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(324,19): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(324,26): error C2143: błąd składniowy: brakuje „;” przed „++”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(324,26): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(324,28): error C2059: błąd składniowy: „)”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(325,1): error C2143: błąd składniowy: brakuje „;” przed „{”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(325,1): error C2447: "{": brak nagłówka funkcji (stary styl formalnej listy?)
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(406,6): error C2143: błąd składniowy: brakuje „;” przed „<<”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(406,6): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(408,1): error C2059: błąd składniowy: „delete”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(409,5): error C2059: błąd składniowy: „}”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(409,5): error C2143: błąd składniowy: brakuje „;” przed „}”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(413,1): error C2143: błąd składniowy: brakuje „;” przed „}”
+C:\Users\jakub\Desktop\ENIGMA\ENIGMA\ENIGMA.cpp(413,1): error C2059: błąd składniowy: „}”
